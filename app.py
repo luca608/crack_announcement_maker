@@ -26,7 +26,7 @@ if submitted:
         st.error("API 키를 먼저 입력해주세요!")
     else:
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-pro')
+        model = genai.GenerativeModel('gemini-3-pro-preview')
         
         prompt = f"""
         당신은 서비스 '크랙(Crack)'의 운영팀입니다. 아래 정보를 바탕으로 공지사항을 작성하세요.
